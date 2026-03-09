@@ -5,21 +5,21 @@
 class Glmt < Formula
   desc "GitLab merge request tool"
   homepage "https://github.com/sairus2k/glmt"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sairus2k/glmt/releases/download/v0.1.2/glmt_0.1.2_darwin_amd64.tar.gz"
-      sha256 "ed3e7e1b5d99eb29eec73f0382e36ae594f9bf7087d5ae3ba9bc744b0663239d"
+      url "https://github.com/sairus2k/glmt/releases/download/v0.1.3/glmt_0.1.3_darwin_amd64.tar.gz"
+      sha256 "90931cd416935cb3e2945745f71709e5f443b7e51ef713efeb601971c003c3e7"
 
       define_method(:install) do
         bin.install "glmt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sairus2k/glmt/releases/download/v0.1.2/glmt_0.1.2_darwin_arm64.tar.gz"
-      sha256 "96bc25cbaef97e2beb513da6164deea68f5b54fac77adc7f045f284aaec01c5a"
+      url "https://github.com/sairus2k/glmt/releases/download/v0.1.3/glmt_0.1.3_darwin_arm64.tar.gz"
+      sha256 "68b95c784e200a6ffda87d7b51785b5febc2b2f0fee60b83b3fe512a730842a8"
 
       define_method(:install) do
         bin.install "glmt"
@@ -29,15 +29,15 @@ class Glmt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sairus2k/glmt/releases/download/v0.1.2/glmt_0.1.2_linux_amd64.tar.gz"
-      sha256 "2bef12945cc8ae282315c0e17952dd9b2d68bb4e5dcea7e974d3eff95fbe0a79"
+      url "https://github.com/sairus2k/glmt/releases/download/v0.1.3/glmt_0.1.3_linux_amd64.tar.gz"
+      sha256 "3647da53ef0b37da5924a26c1b9a558ac0fce0ba6fa54a99e5b9411cfee2a659"
       define_method(:install) do
         bin.install "glmt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sairus2k/glmt/releases/download/v0.1.2/glmt_0.1.2_linux_arm64.tar.gz"
-      sha256 "10c0213c3eebac9f1062a61aeae7446d066a3b208ab9e7b7b28ee136a9060e51"
+      url "https://github.com/sairus2k/glmt/releases/download/v0.1.3/glmt_0.1.3_linux_arm64.tar.gz"
+      sha256 "1fda35ea28f5b606d6bc0af4dadcdbc275c590878159394d9bf1fd9f0685e366"
       define_method(:install) do
         bin.install "glmt"
       end
